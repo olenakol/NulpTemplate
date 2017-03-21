@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .menu::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+        
+        .menu_item {
+            list-style: none;
+            float: left;
+        }
+        
+        .menu_link {
+            display: block;
+            height: 33px;
+            width: 33px;
+            background: url(img/sprite.png) no-repeat;
+            transition: 1s;
+        }
+        
+        .twitter {
+            background-position: -33px 0;
+        }
+        .google {
+            background-position: -66px 0;
+        }
+        .linkedin {
+            background-position: -99px 0;
+        }
+        .facebook:hover {
+            background-position: 0 -33px;
+        }
+        .twitter:hover {
+            background-position: -33px -33px;
+        }
+        .google:hover {
+            background-position: -66px -33px;
+        }
+        .linkedin:hover {
+            background-position: -99px -33px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li class="menu_item"><a class="menu_link facebook" href="#"></a></li>
+        <li class="menu_item"><a class="menu_link twitter" href="#"></a></li>
+        <li class="menu_item"><a class="menu_link google" href="#"></a></li>
+        <li class="menu_item"><a class="menu_link linkedin" href="#"></a></li>
+    </ul>
+</body>
+</html>

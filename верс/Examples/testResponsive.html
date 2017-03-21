@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .header {
+            height: 100px;
+            background: grey;
+        }
+        
+        .container {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .box {
+            float: left;
+            width: 29%;
+            margin: 20px 2%;
+            height: 100px;
+            background: green;
+        }
+        
+        @media (max-width: 1024px) {
+            .box {
+                width: 46%;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .box {
+                width: 96%;
+            }
+        }
+        
+        .footer {
+            clear: both;
+            height: 100px;
+            color: aliceblue;
+            background: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">HEADER</header>
+        <div class="container">
+            <div class="box">box text</div>
+            <div class="box">box text</div>
+            <div class="box">box text</div>
+            <div class="box">box text</div>
+            <div class="box">box text</div>
+            <div class="box">box text</div>
+        </div>
+        <footer class="footer">FOOTER</footer>
+    </div>
+</body>
+
+</html>

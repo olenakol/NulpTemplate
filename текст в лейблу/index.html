@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div ng-controller="HelloWorldCtrl">
+        <h1>{{name+" "+sname}}</h1>
+        <p>My angular exprassion {{4*9}}</p>
+        <input type="text" ng-model="name">
+        <input type="text" ng-model="sname">
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script>
+        var name = 'Dart';
+        var sname = 'Veyder';
+        
+        angular.module('myApp',[])
+        
+        .controller('HelloWorldCtrl', function($scope){
+            $scope.name = name;
+            $scope.sname = sname;
+        })
+    </script>
+</body>
+</html>
